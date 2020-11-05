@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:useDefaultMargins="true">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconWind"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wind"/>
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wind"/>
+        <TextView
+            android:id="@+id/tvItemWind"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconPressure"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pressure"/>
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/pressure"/>
+        <TextView
+            android:id="@+id/tvItemPressure"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconPrecip"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/precip" />
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/precip"/>
+        <TextView
+            android:id="@+id/tvItemPrecip"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconCloud"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cloud" />
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cloud"/>
+        <TextView
+            android:id="@+id/tvItemCloud"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconWindDir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wind_dir" />
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wind_dir"/>
+        <TextView
+            android:id="@+id/tvItemWindDir"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconFeelsLike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/temperature" />
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feels_like"/>
+        <TextView
+            android:id="@+id/tvItemFeelsLike"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconHumidity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/humidity"/>
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/humidity"/>
+        <TextView
+            android:id="@+id/tvItemHumidity"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="140dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivIconUv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/uv_index"/>
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/uv_index"/>
+        <TextView
+            android:id="@+id/tvItemUv"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</GridLayout>

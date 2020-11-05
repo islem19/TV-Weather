@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="wind">Wind:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="precip">Precip:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="wind_dir">Wind Dir:</string>
+    <string name="feels_like">Feels:</string>
+    <string name="cloud">Cloud:</string>
+    <string name="uv_index">UV Index:</string>
+    <string name="lastUpdate">Last Update: %1$s</string>
+    <string name="max_temp">Max Temp:</string>
+    <string name="min_temp">Min Temp:</string>
+    <string name="max_wind">Max Wind:</string>
+    <string name="total_precip">Total Precip:</string>
+    <string name="chance_rain">Chance Rain:</string>
+    <string name="chance_snow">Chance Snow:</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="moonrise">Moonrise:</string>
+    <string name="moonset">Moonset:</string>
+    <string name="phase">Phase:</string>
+    <string name="illumination">Illumination:</string>
+</resources>

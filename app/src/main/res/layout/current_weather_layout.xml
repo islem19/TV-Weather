@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/current_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline_vertical"/>
+
+    <TextView
+        android:id="@+id/tvLocalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_vertical" />
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        app:layout_constraintBottom_toTopOf="@id/tvTemperature"
+        app:layout_constraintLeft_toRightOf="@id/ivIcon"/>
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvCondition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ivIcon"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#FF7700"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        app:layout_constraintRight_toRightOf="@id/guideline_vertical"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical"/>
+
+    <include
+        android:id="@+id/detailsLayout"
+        layout="@layout/item_weather_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintLeft_toRightOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        app:layout_constraintBottom_toTopOf="@id/tvLastUpdate"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tvLastUpdate"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/lastUpdate"
+        app:layout_constraintTop_toBottomOf="@id/detailsLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
